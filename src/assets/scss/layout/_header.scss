@@ -1,0 +1,27 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 4px #bcc0c3;
+  &__show-modal{
+    margin-right: 10px;
+  }
+  &__buttons-wrap {
+    display: flex;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .header{
+    &__buttons-wrap{
+      flex-direction: column;
+      width: 160px;
+    }
+    &__show-modal{
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
