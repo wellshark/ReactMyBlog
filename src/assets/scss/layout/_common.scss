@@ -133,20 +133,37 @@ body {
   border: 1px solid #ced4da;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  &_error{
+    border: 1px solid red;
+  }
 }
+
 
 .form__input-section{
   display: flex;
   flex-direction: column;
   margin: 20px 0 10px 0;
 }
+.form{
+  box-sizing: border-box;
+  width: 350px;
+  max-width: 350px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  &__title{
+    text-align: center;
+  }
+}
+
 
 .error-messages {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 100%;
-  margin-left: 10px;
+  //position: absolute;
+  //top: 10px;
+  //right: 10px;
+  //width: 100%;
+  //margin-left: 10px;
+  margin-top: 20px;
   max-width: 300px;
   padding: 10px 20px;
   line-height: 1.5;
@@ -154,7 +171,7 @@ body {
   border: 1px solid #f5c6cb;
   background-color: #f8d7da;
   color: #721c24;
-  opacity: 0;
+  //opacity: 0;
   transition: opacity 0.4s linear;
 }
 
