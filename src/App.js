@@ -13,7 +13,7 @@ import SignupPage from "./pages/SignupPage";
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className='app'>
                 <nav>
                     <ul>
                         <li>

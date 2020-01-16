@@ -68,7 +68,7 @@ export default class Form extends React.Component {
 
     render() {
         return (
-            <form className="form sign-in__form">
+            <form className="form">
                 <h2 className="form__title">{this.props.title}</h2>
                 <ErrorMessage formData={this.state} />
                     <div className="form__input-section">
@@ -88,7 +88,7 @@ export default class Form extends React.Component {
                     </div>
 
                     <Button onClick={(event) => {
-                        this.props.onSubmit(this.state.form);
+                        this.props.onSubmit(this.state);
                         event.preventDefault();
                     }} className='tets' isDisabled={!this.isFormValid()}
                             appearance={{size: 'lg', color: 'blue'}}>{this.props.buttonText}</Button>

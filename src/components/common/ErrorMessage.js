@@ -7,20 +7,18 @@ export function ErrorMessage(props) {
         return null;
     });
     return (
-
-            formErrors.map((fieldName, i) => {
+        <div className='error-messages'>
+            {formErrors.map((fieldName, i) => {
                 if (fieldName.length > 0) {
                     return (
-                        <div key={i} className='error-messages'>
-
-                            <p >{fieldName}</p>
-                        </div>
+                            <p key={i} className='error-messages__item'>{fieldName}</p>
 
                     )
                 } else {
-                    return <div key={i}></div>;
+                    return '';
                 }
-            })
+            })}
+        </div>
 
     );
 }
